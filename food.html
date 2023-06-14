@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>美食网</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      background-color: #f5f5f5;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      background-color: #333;
+      color: #fff;
+      padding: 20px;
+      text-align: center;
+    }
+
+    h1 {
+      margin: 0;
+      font-size: 24px;
+    }
+
+    main {
+      max-width: 800px;
+      margin: 20px auto;
+      padding: 20px;
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    }
+
+    .recipe {
+      margin-bottom: 20px;
+      padding: 20px;
+      background-color: #f9f9f9;
+      border-radius: 10px;
+    }
+
+    .recipe h2 {
+      margin-top: 0;
+      font-size: 20px;
+    }
+
+    .recipe p {
+      margin: 0;
+      line-height: 1.5;
+      font-size: 15px;
+    }
+    .xiala {
+    background-color: #4CAF50;
+    color: #FFF0F5;
+    padding: 16px;
+    font-size: 16px;
+    border: none;
+    cursor: pointer;
+    margin-left: 10px;
+}
+/* 容器 <div> - 需要定位下拉内容 */
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+/* 下拉内容 (默认隐藏) */
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #FFF0F5;
+    min-width: 100px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+}
+/* 下拉菜单的链接 */
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+/* 鼠标移上去后修改下拉菜单链接颜色 */
+.dropdown-content a:hover {background-color:#FFB6C1}
+
+/* 在鼠标移上去后显示下拉菜单 */
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+/* 当下拉内容显示后修改下拉按钮的背景颜色 */
+.dropdown:hover .xiala {
+    background-color: #FFB6C1;
+}
+  </style>
+</head>
+<body>
+<header>
+  <h1>美食网页</h1>
+</header>
+
+<main>
+  <div class="dropdown">
+    <button class="xiala" type="submit">点单</button>
+    <div class="dropdown-content">
+      <a href="zhupai.html">炸猪排</a>
+      <a href="sushi.html">寿司</a>
+      <a href="paocai.html">泡菜</a>
+      <a href="bibinba.html">韩式拌饭</a>
+      <a href="toboki.html">韩式炒年糕</a>
+    </div>
+  </div>
+  <div class="recipe">
+    <h2>炸豬排（豚かつ）</h2>
+    <p>这是日本的家庭了料理之一。</p>
+    <img src="japaneseFiredPigMeat.jpeg" style="width: 200px;"/>
+  </div>
+
+  <div class="recipe">
+    <h2>寿司</h2>
+    <p>这是日本的著名美食，来到日本一定要尝一尝。</p>
+    <img src="sushi.jpeg" style="width: 200px;"/>
+  </div>
+
+  <div class="recipe">
+    <h2>泡菜</h2>
+    <p>这是韩国的传统食物，来到韩国一定要尝一尝。</p>
+    <img src="kimuchi.webp" style="width: 200px;"/>
+  </div>
+
+  <div class="recipe">
+    <h2>韓式拌飯</h2>
+    <p>这是韩国的家庭食物，来到韩国一定要尝一尝。</p>
+    <img src="bibimbap.webp" style="width: 200px;"/>
+  </div>
+
+  <div class="recipe">
+    <h2>韓式炒年糕</h2>
+    <p>这是韩国的人气食物，来到韩国一定要尝一尝。</p>
+    <img src="tteokbokki.webp" style="width: 200px;"/>
+  </div>
+</main>
+</body>
+</html>

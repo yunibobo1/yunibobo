@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script>
+        function calculateTotal() {
+            var quantity = parseInt(document.getElementById('quantity').value);
+            var price = parseFloat(document.getElementById('price').innerText);
+            var total = quantity * price;
+            document.getElementById('total').innerText = total.toFixed(2);
+        }
+
+        function increaseQuantity() {
+            var quantity = parseInt(document.getElementById('quantity').value);
+            document.getElementById('quantity').value = quantity + 1;
+            calculateTotal();
+        }
+
+        function decreaseQuantity() {
+            var quantity = parseInt(document.getElementById('quantity').value);
+            if (quantity > 1) {
+                document.getElementById('quantity').value = quantity - 1;
+                calculateTotal();
+            }
+        }
+    </script>
+</head>
+<body>
+<img src="japaneseFiredPigMeat.jpeg" style="width: 200px;" alt=""/>
+<br><br>
+<label for=quantity>数量：</label>
+<button onclick="decreaseQuantity()">-</button>
+<input type="number" id="quantity" name="food" value="1" min="1" onchange="calculatetotal"> <label for="quantity">炸猪排</label>
+<button onclick="increaseQuantity()">+</button>
+<label for="price">値段：</label>
+<span id="price">900</span>
+<br><br>
+<label for="total">总价：</label>
+<span id="total">900</span>
+<script>
+        calculateTotal(); // 初始化计算总价
+    </script>
+<a href="food.html">返回</a>
+</body>
+</html>
